@@ -1,5 +1,7 @@
-self learning UC Berkley CS61C
+# UC Berkeley CS61C: Great Ideas in Computer Architecture
 
-watch FA20 videos, do SP26 labs, projects, worksheets
+Self-learning repository for UC Berkeley's CS61C.
 
-btw Dan is so great!
+## Learning Roadmap
+* **Lectures:** Watching Fall 2020 videos (Dan Garcia is absolute greatness!)
+* **Hands-on Practices:** Completing Spring 2026 labs, projects, and discussion worksheets.
