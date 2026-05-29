@@ -14,25 +14,27 @@
 # ==============================================================================
 relu:
     # Prologue
+    li t0 0
+    li t1 1
+    bge a1 t1 loop_start
+    li a0 36
+    j exit
 
-
-loop_start:
-
-
-
-
-
-
-
-
+# t0 is the loop var., t1 is the pointer now, t2 is the int that t1 points to
+loop_start: 
+    beq t0 a1 loop_end
+    slli t1 t0 2
+    add t1 t1 a0
+    lw t2 0(t1)
+    bge t2 x0 loop_continue
+    li t2 0
+    
 loop_continue:
-
-
-
+    sw t2 0(t1)
+    addi t0 t0 1
+    j loop_start
+    
 loop_end:
-
-
     # Epilogue
-
-
+    
     jr ra
